@@ -1,5 +1,5 @@
 const gulp = require("gulp");
-const uglify = require("gulp-uglify");
+const uglify = require('gulp-uglify-es').default;
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 
