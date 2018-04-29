@@ -4,27 +4,32 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
-    <header>
+    <header class="text-center">
       <h1>Airplane traffic v1</h1>
-      <p>Simple air traffic simulator</p>
+      <h4>Simple air traffic simulator, allowing you to get closer to air traffic</h4>
     </header>
 
-    <main>
+    <main class="container">
       <section>
-        <h3>Near planes</h3>
+        <h4>Nearby planes</h4>
         <div class="table-responsive">
-          <table class="table airplanes-list">
-            <thead class="thead-dark">
-              <th scope="col">logo</th>
+          <table class="table table-hover airplanes-list">
+            <thead>
+              <th scope="col">Flying side</th>
               <th scope="col">Altitude</th>
               <th scope="col">Code number</th>
             </thead>
 
             <tbody>
-
+              <tr class="loadingCircle">
+                <td colspan="3" rowspan="3">
+                <img src="img/loading.gif" class="float-center"/>
+              </td>
+              </tr>
             </tbody>
           </table>
         </div>
