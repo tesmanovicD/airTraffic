@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; }
+
+li {
+  list-style: none; }
+
+.page-header {
+  margin: 10px 0 50px; }
+  .page-header h1 {
+    font-size: 30px;
+    color: #2980b9; }
+    @media only screen and (min-width: 992px) {
+      .page-header h1 {
+        font-size: 40px; } }
+  .page-header h5 {
+    font-size: 15px; }
+    @media only screen and (min-width: 992px) {
+      .page-header h5 {
+        font-size: 20px; } }
+
+.airplanes-list thead {
+  background-color: #2980b9;
+  font-size: 11px;
+  color: #FFF;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 992px) {
+    .airplanes-list thead {
+      font-size: 16px; } }
+
+.airplanes-list tbody {
+  font-weight: bold;
+  font-size: 12px; }
+  @media only screen and (min-width: 992px) {
+    .airplanes-list tbody {
+      font-size: 14px; } }
+
+.airplanes-list .loadingCircle img {
+  display: block;
+  margin: 0 auto; }
+
+.airplanes-list .alert {
+  border: 0;
+  border-radius: 0; }
+
+.airplanes-list .airplane-data {
+  cursor: pointer; }
+  .airplanes-list .airplane-data img {
+    max-width: 20px; }
+
+.flight-details {
+  display: none;
+  border: 3px solid #2980b9;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 0 12px 20px;
+  height: 30%;
+  padding: 0; }
+  .flight-details h4 {
+    display: inline-block;
+    font-size: 20px; }
+  .flight-details li h4 {
+    font-weight: bold;
+    margin-bottom: 0; }
+  .flight-details header {
+    clear: both;
+    text-align: center; }
+    .flight-details header img {
+      margin: 0 auto; }
+  .flight-details #airplane-manufacturer,
+  .flight-details #airplane-model {
+    padding: 0 0 0 5px; }
+  .flight-details #airplane-company {
+    font-size: 24px;
+    text-transform: uppercase; }
+  .flight-details #close-dialog {
+    margin: 0 5px 0 0;
+    float: right; }
+    .flight-details #close-dialog:hover {
+      cursor: pointer; }

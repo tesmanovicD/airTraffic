@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+$primary_color: #2980b9;
+$font_stack: Lato, sans-serif;
+$bp_mobile: 350px;
+$bp_tablet: 768px;
+$bp_desktop: 992px;
+
+body {
+  font-family: $font_stack;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+li {
+  list-style: none;
+}
+
+.page-header {
+  margin: 10px 0 50px;
+
+  h1 {
+    font-size: 30px;
+    color: $primary_color;
+    @media only screen and (min-width: $bp_desktop) {
+      font-size: 40px;
+    }
+  }
+
+  h5 {
+    font-size: 15px;
+    @media only screen and (min-width: $bp_desktop) {
+      font-size: 20px;
+    }
+  }
+}
+
+.airplanes-list {
+  thead {
+    background-color: $primary_color;
+    font-size: 11px;
+    color: #FFF;
+    text-transform: uppercase;
+    @media only screen and (min-width: $bp_desktop) {
+      font-size: 16px;
+    }
+  }
+
+  tbody {
+    font-weight: bold;
+    font-size: 12px;
+    @media only screen and (min-width: $bp_desktop) {
+      font-size: 14px;
+    }
+  }
+
+  .loadingCircle img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .alert {
+    border: 0;
+    border-radius: 0;
+  }
+
+  .airplane-data {
+    cursor: pointer;
+
+    img {
+      max-width: 20px;
+    }
+  }
+}
+
+.flight-details {
+  display: none;
+  border: 3px solid $primary_color;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 0 12px 20px;
+  height: 30%;
+  padding: 0;
+
+  h4 {
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  li h4 {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  header {
+    clear: both;
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  #airplane-manufacturer,
+  #airplane-model {
+    padding: 0 0 0 5px;
+  }
+
+  #airplane-company {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  #close-dialog {
+    margin: 0 5px 0 0;
+    float: right;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
